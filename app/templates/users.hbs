@@ -1,1 +1,19 @@
-Users list
+<h1>Users list</h1>
+
+{{outlet}}
+
+<div class="pull-right gl-add-buttons">
+  {{#link-to 'users.new' class='btn btn-info'}}
+    <i class="glyphicon-plus" /> New User
+  {{/link-to}}
+  {{#link-to 'goals.new' class='btn btn-info'}}
+    <i class="glyphicon-plus" /> New Goal
+  {{/link-to}}
+</div>
+
+{{#each model as |user|}}
+  <div class="row">
+    <div class="col-xs-4">{{user.first_name}}</div>
+    <div class="col-xs-4">{{user.last_name}}</div>
+  </div>
+{{/each}}

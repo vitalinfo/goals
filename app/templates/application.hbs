@@ -1,4 +1,4 @@
-<!-- {{#bs-navbar type=(if inverse 'inverse') fluid=fluid collapsed=collapsed onCollapse=(action (mut collapsed) true) onExpand=(action (mut collapsed) false) as |navbar|}}
+{{#bs-navbar type=(if inverse 'inverse') fluid=fluid collapsed=collapsed onCollapse=(action (mut collapsed) true) onExpand=(action (mut collapsed) false) as |navbar|}}
   <div class="navbar-header">
     {{navbar.toggle}}
     {{#link-to "users" class="navbar-brand"}}Goals{{/link-to}}
@@ -6,10 +6,10 @@
   {{#navbar.content}}
     {{#navbar.nav as |nav|}}
       {{#nav.item}}{{#nav.link-to "users"}}Users{{/nav.link-to}}{{/nav.item}}
-      {{#nav.item}}{{#nav.link-to "goals"}}Goals{{/nav.link-to}}{{/nav.item}}
+      <!-- {{#nav.item}}{{#nav.link-to "goals"}}Goals{{/nav.link-to}}{{/nav.item}} -->
     {{/navbar.nav}}
   {{/navbar.content}}
-{{/bs-navbar}} -->
+{{/bs-navbar}}
 
 <div class='container gl-defauld-padding'>
   {{outlet}}
