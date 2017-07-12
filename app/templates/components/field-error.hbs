@@ -1,5 +1,8 @@
-<div class="error-message">
-  {{#each errors as |error|}}
+<div class="gl-error-message">
+  {{#each errors as |error index|}}
+      {{#if index}}
+      ,
+      {{/if}}
       {{error.message}}
   {{/each}}
 </div>

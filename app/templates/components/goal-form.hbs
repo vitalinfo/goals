@@ -1,0 +1,9 @@
+{{#bs-form formLayout=formLayout model=this onSubmit=(action "submit") as |form|}}
+  {{form.element controlType="text" label="Title" placeholder="Enter Title" property="goal.title"}}
+  {{field-error errors=goal.errors.title}}
+  {{form.element controlType="power-select" property="goal.user" label="User" options=users optionLabelPath="name"}}
+  {{field-error errors=goal.errors.user}}
+  {{form.element controlType="text" label="Score" placeholder="Enter Score" property="goal.score"}}
+  {{field-error errors=goal.errors.score}}
+  {{bs-button defaultText="Submit" type="primary" buttonType="submit" class="gl-maring-top-10"}}
+{{/bs-form}}

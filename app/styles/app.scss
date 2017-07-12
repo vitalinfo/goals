@@ -10,7 +10,11 @@
   }
 }
 
-.error-message {
+.gl-maring-top-10 {
+  margin-top: 10px
+}
+
+.gl-error-message {
   color: #d94d41;
   font-size: 12px;
   padding-left: 4px;
@@ -18,3 +22,8 @@
   text-align: left;
   margin-top: -15px;
 }
+
+
+@import "ember-power-select/themes/bootstrap";
+
+@import "ember-power-select";

@@ -6,7 +6,7 @@ export default Ember.Controller.extend({
 			let newUser = user;
       if (!newUser.validate()) { return }
 			newUser.save().catch((error) => {}).then(() =>{
-				this.transitionToRoute('users')
+				this.transitionToRoute('/')
 			})
 		}
 	}
