@@ -1,5 +1,16 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<!-- {{#bs-navbar type=(if inverse 'inverse') fluid=fluid collapsed=collapsed onCollapse=(action (mut collapsed) true) onExpand=(action (mut collapsed) false) as |navbar|}}
+  <div class="navbar-header">
+    {{navbar.toggle}}
+    {{#link-to "users" class="navbar-brand"}}Goals{{/link-to}}
+  </div>
+  {{#navbar.content}}
+    {{#navbar.nav as |nav|}}
+      {{#nav.item}}{{#nav.link-to "users"}}Users{{/nav.link-to}}{{/nav.item}}
+      {{#nav.item}}{{#nav.link-to "goals"}}Goals{{/nav.link-to}}{{/nav.item}}
+    {{/navbar.nav}}
+  {{/navbar.content}}
+{{/bs-navbar}} -->
 
-{{outlet}}
+<div class='container gl-defauld-padding'>
+  {{outlet}}
+</div>
