@@ -1,28 +1,7 @@
 {{#bs-form formLayout=formLayout model=this onSubmit=(action "submit") as |form|}}
-  {{form.element controlType="first_name" label="First Name" placeholder="Enter First Name" property="text" }}
-  {{form.element controlType="last_name" label="Last Name" placeholder="Enter Last Name" property="text" required=true}}
+  {{form.element controlType="text" label="First Name" placeholder="Enter First Name" property="user.first_name"}}
+  {{field-error errors=user.errors.first_name}}
+  {{form.element controlType="text" label="Last Name" placeholder="Enter Last Name" property="user.last_name"}}
+  {{field-error errors=user.errors.first_name}}
   {{bs-button defaultText="Submit" type="primary" buttonType="submit"}}
 {{/bs-form}}
-<!-- <form {{action "submit" on="submit"}}>
-	<div>
-	  <label for="title">First Name</label>
-  	{{input value=user.first_name placeholder="Enter First Name"}}
-  	{{#each user.errors.first_name as |error|}}
-	    <div class="error">
-	      {{error.message}}
-	    </div>
-		{{/each}}
-  </div>
-
-  <div>
-	  <label for="title">Last Name</label>
-  	{{input value=user.last_name placeholder="Enter Last Name"}}
-  	{{#each user.errors.last_name as |error|}}
-	    <div class="error">
-	      {{error.message}}
-	    </div>
-		{{/each}}
-  </div>
-
-  <button type="submit">Submit</button>
-</form> -->
