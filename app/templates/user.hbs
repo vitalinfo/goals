@@ -1,0 +1,13 @@
+<h1>User details</h1>
+
+<div class="row">
+  <div class="col-xs-4"><h4>Name</h4></div>
+  <div class="col-xs-8">{{model.name}}</div>
+</div>
+
+<div class="row">
+  <div class="col-xs-4"><h4>Average Score</h4></div>
+  <div class="col-xs-8">{{model.average_score}}</div>
+</div>
+
+{{render "goals" model.goals}}
