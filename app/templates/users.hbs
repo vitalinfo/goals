@@ -18,7 +18,7 @@
 
 {{#each model as |user|}}
   <div class="row">
-    <div class="col-xs-6">{{user.name}}</div>
+    <div class="col-xs-6 gl-user-name">{{user.name}}</div>
     <div class="col-xs-2">{{user.average_score}}</div>
     <div class="col-xs-4">{{#link-to 'user' user.id}}View{{/link-to}}</div>
   </div>

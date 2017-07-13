@@ -1,5 +1,6 @@
 import DS from 'ember-data';
 import Validator from '../mixins/model-validator';
+import Ember from 'ember';
 
 export default DS.Model.extend(Validator, {
   first_name: DS.attr('string'),

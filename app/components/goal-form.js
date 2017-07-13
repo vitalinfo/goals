@@ -11,7 +11,7 @@ export default Ember.Component.extend({
   },
   init(){
     this._super(...arguments);
-    this.set('goal', this.data.goal);
-    this.set('users', this.data.users);
+    this.set('goal', (this.data || {}).goal);
+    this.set('users', (this.data || {}).users);
   }
 });

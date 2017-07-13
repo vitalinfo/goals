@@ -6,20 +6,8 @@ moduleForComponent('goal-form', 'Integration | Component | goal form', {
 });
 
 test('it renders', function(assert) {
-
-  // Set any properties with this.set('myProperty', 'value');
-  // Handle any actions with this.on('myAction', function(val) { ... });
-
   this.render(hbs`{{goal-form}}`);
 
-  assert.equal(this.$().text().trim(), '');
-
-  // Template block usage:
-  this.render(hbs`
-    {{#goal-form}}
-      template block text
-    {{/goal-form}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
+  assert.equal(this.$().text().trim().replace(/[\n\r]+/g, ' ').replace(/ +/g, ' '),
+    'Title User Score Submit');
 });
